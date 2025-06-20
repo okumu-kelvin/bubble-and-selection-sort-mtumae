@@ -3,10 +3,7 @@ def selection_sort(arr):
         index = i
         print(index)
         for x in range(i+1, len(arr)):
-            if arr[x]<arr[i]:
+            if arr[x]<arr[index]:
                 index = x
-        minval = arr.pop(index)
-        arr.insert(i, minval)
+        arr[i], arr[index] = arr[index], arr[i]
     return arr
-
-
