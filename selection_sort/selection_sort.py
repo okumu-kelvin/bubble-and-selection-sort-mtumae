@@ -7,3 +7,7 @@ def selection_sort(arr):
                 index = x
         arr[i], arr[index] = arr[index], arr[i]
     return arr
+
+
+
+
